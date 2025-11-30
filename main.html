@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KT8D5 Revival Project</title>
   <style>
     body {
@@ -32,7 +32,7 @@
       background-color: #666;
     }
     section {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: #fff;
@@ -42,20 +42,12 @@
     h1, h2 {
       text-align: center;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+    .social-links a {
+      color: #1d9bf0;
+      text-decoration: none;
     }
-    .gallery img {
-      width: 300px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
+    .social-links a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -64,65 +56,56 @@
       color: #fff;
       margin-top: 20px;
     }
-    .social-links a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    .social-links a:hover {
-      color: #1da1f2;
+    /* optionally make embedded albums responsive: */
+    .imgur-embed-pub {
+      max-width: 100%;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>KT8D5 Revival Project</h1>
-</header>
+  <header>
+    <h1>KT8D5 Revival Project</h1>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>We're Bratislava's volunteers who want to help KT8D5 (old) be alive! We decided to pull up this project and make it visible for everyone who loves it.</p>
-  <p>For more info or contacts: <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a></p>
-</section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are Bratislava’s volunteers who want to help KT8D5 (old) stay alive — we started this project to bring visibility to it and gather support.</p>
+    <p>For more info or contacts, write to <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a>.</p>
+  </section>
 
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery" id="galleryContainer"></div>
-</section>
+  <section id="gallery">
+    <h2>Gallery</h2>
 
-<section id="contact">
-  <h2>Social Media & Contact</h2>
-  <p>Join our community on Discord:</p>
-  <p><a href="https://discord.gg/Mz4mEDA456" target="_blank">Discord Server</a></p>
-</section>
+    <!-- Embedded Imgur albums -->
+    <!-- First album -->
+    <blockquote class="imgur-embed-pub" lang="en" data-id="a/tAFP6MD">
+       <a href="https://imgur.com/a/tAFP6MD">KT8D5 Album 1</a>
+    </blockquote>
 
-<footer>
-  <p>&copy; 2025 KT8D5 Volunteers | All rights reserved</p>
-</footer>
+    <!-- Second album -->
+    <blockquote class="imgur-embed-pub" lang="en" data-id="a/hToojOT">
+       <a href="https://imgur.com/a/hToojOT">KT8D5 Album 2</a>
+    </blockquote>
 
-<script>
-  const galleryLinks = [
-    "https://imgur.com/a/hKiwhT4",
-    "https://imgur.com/a/CKQgGhF",
-    // Add more images from your Imgur galleries
-  ];
+    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+  </section>
 
-  const galleryContainer = document.getElementById('galleryContainer');
-  galleryLinks.forEach(url => {
-    const img = document.createElement('img');
-    img.src = url;
-    img.alt = "KT8D5 Image";
-    galleryContainer.appendChild(img);
-  });
-</script>
+  <section id="contact">
+    <h2>Contact & Social Media</h2>
+    <p>Join our community on Discord: <a href="https://discord.gg/Mz4mEDA456" target="_blank">Discord Server</a></p>
+    <p>Or reach out to us by email: <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KT8D5 Revival Project — All rights reserved</p>
+  </footer>
 
 </body>
 </html>
