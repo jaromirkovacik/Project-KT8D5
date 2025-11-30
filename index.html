@@ -1,111 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KT8D5 Revival Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #222;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #444;
-    }
-    nav a {
-      color: #fff;
-      padding: 15px 25px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background-color: #666;
-    }
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .social-links a {
-      color: #1d9bf0;
-      text-decoration: none;
-    }
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 15px 0;
-      background-color: #222;
-      color: #fff;
-      margin-top: 20px;
-    }
-    /* optionally make embedded albums responsive: */
-    .imgur-embed-pub {
-      max-width: 100%;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KT8D5 Restoration Project - Bratislava</title>
+<style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f4f4f4; color:#333; }
+    header { background:#222; color:#fff; padding:20px 0; text-align:center; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
+    section { padding:20px; max-width:1000px; margin:auto; background:#fff; margin-bottom:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+    h1,h2,h3 { color:#222; }
+    img { max-width:100%; border-radius:5px; margin:10px 0; }
+    .gallery img { width:32%; margin-right:1%; margin-bottom:10px; }
+    footer { text-align:center; padding:20px; background:#222; color:#fff; }
+    a.button { display:inline-block; padding:10px 15px; background:#007BFF; color:#fff; border-radius:5px; text-decoration:none; margin-top:10px; }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>KT8D5 Revival Project</h1>
-  </header>
+<header>
+    <h1>KT8D5 Restoration Project - Bratislava</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#project">Our Project</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<section id="about">
+    <h2>About KT8D5</h2>
+    <p>The Tatra KT8D5 is a three-section, bidirectional tram built by ČKD Tatra from 1984 to 1999. It has been widely used in many cities in former Czechoslovakia and beyond. With a length of about 30.3 meters and capacity for over 200 passengers, it remains an iconic tram model.</p>
+    <p>Learn more on <a href="https://en.wikipedia.org/wiki/Tatra_KT8D5" target="_blank">Wikipedia</a>.</p>
+</section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are Bratislava’s volunteers who want to help KT8D5 (old) stay alive — we started this project to bring visibility to it and gather support.</p>
-    <p>For more info or contacts, write to <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a>.</p>
-  </section>
+<section id="project">
+    <h2>Our Volunteer Project</h2>
+    <p>We are a group of volunteers in Bratislava working to restore an old KT8D5 tram to preserve it for future generations. Our goal is to repair, document, and bring this historical tram back to life.</p>
+    <p>Location of our field and workshop: <a href="https://maps.app.goo.gl/ZXtWPiJnTBU4DxrcA" target="_blank">View on Google Maps</a></p>
+</section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Kt8d5.jpg" alt="KT8D5 Tram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Praha%2C_Nov%C3%A9_M%C4%9Bsto%2C_Senov%C3%A1%C5%BEn%C3%A9_n%C3%A1m%C4%9Bst%C3%AD%2C_Tatra_KT8D5.jpg/1280px-Praha%2C_Nov%C3%A9_M%C4%9Bsto%2C_Senov%C3%A1%C5%BEn%C3%A9_n%C3%A1m%C4%9Bst%C3%AD%2C_Tatra_KT8D5.jpg" alt="KT8D5 Tram">
+        <img src="https://i.ytimg.com/vi/IwTZszOk484/maxresdefault.jpg" alt="KT8D5 Tram Interior">
+    </div>
+</section>
 
-    <!-- Embedded Imgur albums -->
-    <!-- First album -->
-    <blockquote class="imgur-embed-pub" lang="en" data-id="a/tAFP6MD">
-       <a href="https://imgur.com/a/tAFP6MD">KT8D5 Album 1</a>
-    </blockquote>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you want to help or learn more about our project, reach out to us:</p>
+    <p>Email: <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a></p>
+</section>
 
-    <!-- Second album -->
-    <blockquote class="imgur-embed-pub" lang="en" data-id="a/hToojOT">
-       <a href="https://imgur.com/a/hToojOT">KT8D5 Album 2</a>
-    </blockquote>
-
-    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-  </section>
-
-  <section id="contact">
-    <h2>Contact & Social Media</h2>
-    <p>Join our community on Discord: <a href="https://discord.gg/Mz4mEDA456" target="_blank">Discord Server</a></p>
-    <p>Or reach out to us by email: <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 KT8D5 Revival Project — All rights reserved</p>
-  </footer>
+<footer>
+    <p>KT8D5 Restoration Project - Bratislava | Volunteers Preserving Tram History</p>
+</footer>
 
 </body>
 </html>
