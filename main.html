@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KT8D5 Revival Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+    }
+    nav a {
+      color: #fff;
+      padding: 15px 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #666;
+    }
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background-color: #222;
+      color: #fff;
+      margin-top: 20px;
+    }
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #1da1f2;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KT8D5 Revival Project</h1>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We're Bratislava's volunteers who want to help KT8D5 (old) be alive! We decided to pull up this project and make it visible for everyone who loves it.</p>
+  <p>For more info or contacts: <a href="mailto:aqwymarston@gmail.com">aqwymarston@gmail.com</a></p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery" id="galleryContainer"></div>
+</section>
+
+<section id="contact">
+  <h2>Social Media & Contact</h2>
+  <p>Join our community on Discord:</p>
+  <p><a href="https://discord.gg/Mz4mEDA456" target="_blank">Discord Server</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 KT8D5 Volunteers | All rights reserved</p>
+</footer>
+
+<script>
+  const galleryLinks = [
+    "https://i.imgur.com/your_first_image.jpg",
+    "https://i.imgur.com/your_second_image.jpg",
+    "https://i.imgur.com/your_third_image.jpg",
+    // Add more images from your Imgur galleries
+  ];
+
+  const galleryContainer = document.getElementById('galleryContainer');
+  galleryLinks.forEach(url => {
+    const img = document.createElement('img');
+    img.src = url;
+    img.alt = "KT8D5 Image";
+    galleryContainer.appendChild(img);
+  });
+</script>
+
+</body>
+</html>
